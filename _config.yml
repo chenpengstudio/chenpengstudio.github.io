@@ -1,10 +1,10 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SOLID.
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Chen Peng | 彭 宸
+description: "Painter from Taiwan."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "http://www.chenpengstudio.com/" #important: start with /
+baseurl: "" #important: start with /
 url: "http://www.chenpengstudio.com/"
 
 # Build settings
@@ -51,8 +51,8 @@ address:
     - Some Ave, 987,
     - 23890, New York,
     - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+email: studiochenpeng@gmail.com
+tel: +1 734-277-6171
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
