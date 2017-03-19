@@ -4,7 +4,7 @@
 title: Chen Peng | 彭 宸
 description: "Painter from Taiwan."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/www.chenpengstudio.com" #important: start with /
+baseurl: "/" #important: start with /
 url: "http://www.chenpengstudio.com"
 
 # Build settings
@@ -48,7 +48,7 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines:
-    - Some Ave, 987,
+    - 42 Union St., 987,
     - 23890, New York,
     - United States.
 email: studiochenpeng@gmail.com
