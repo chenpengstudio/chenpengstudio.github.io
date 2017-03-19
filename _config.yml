@@ -4,8 +4,8 @@
 title: Chen Peng | 彭 宸
 description: "Painter from Taiwan."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "" #important: start with /
-url: "http://www.chenpengstudio.com/"
+baseurl: "/www.chenpengstudio.com" #important: start with /
+url: "http://www.chenpengstudio.com"
 
 # Build settings
 markdown: kramdown
