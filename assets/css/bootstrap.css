@@ -951,6 +951,7 @@ pre code {
   }
   .col-sm-6 {
     width: 50%;
+    margin-bottom: 10px; 
   }
   .col-sm-5 {
     width: 41.66666667%;
@@ -1110,6 +1111,7 @@ pre code {
   }
   .col-md-6 {
     width: 50%;
+    margin-bottom: 10px;
   }
   .col-md-5 {
     width: 41.66666667%;
@@ -1269,6 +1271,7 @@ pre code {
   }
   .col-lg-6 {
     width: 50%;
+    margin-bottom: 10px;
   }
   .col-lg-5 {
     width: 41.66666667%;
