@@ -513,8 +513,8 @@ a.anchor{
 }
 .grid-sizer,
 .grid-item { 
-  width: 49%;
-  margin: .5%;
+  width: 30%;
+  margin: 1.2%;
 }
 .grid-item-3 { 
   width: 33%; 
