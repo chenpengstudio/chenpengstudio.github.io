@@ -375,6 +375,10 @@ a:focus {
 	color: #999999;
 }
 
+#footerwrap a {
+	color: #999999;
+}
+
 #footerwrap i {
 	font-size: 40px;
 	color: #999999;
@@ -449,7 +453,7 @@ csmall {
 #contactwrap {
 	background: url(../img/contact.jpg) no-repeat center top;
 	margin-top: -60px;
-	padding-top:0px;
+	padding-top:60px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -515,10 +519,6 @@ a.anchor{
 .grid-item { 
   width: 30%;
   margin: 1.2%;
-}
-.grid-item-3 { 
-  width: 33%; 
-  margin: .3%; 
 }
 .grid-item {
   float: left;
