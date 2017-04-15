@@ -10,8 +10,8 @@
 ################################################################# */ 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
-@import url(http://fonts.googleapis.com/css?family=Alegreya:400,700|IM+Fell+English+SC|IM+Fell+English:400,400i);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700|Quattrocento:400,700|Alegreya:400,700|IM+Fell+English+SC|IM+Fell+English:400,400i);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
 
@@ -28,12 +28,12 @@ body {
 	margin: 0; 
 	height: 100%; 
 	color: ;
-	font-family: 'Alegreya', serif;
+	font-family: 'Quattrocento Sans', sans-serif;
 	font-weight: 400;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'IM Fell English', serif;
+	font-family: 'Quattrocento', 'cwTeXFangSong', serif;
 	font-weight: 700;
 }
 
@@ -41,9 +41,9 @@ p {
 	padding: 0; 
 	margin-bottom: 12px; 
 	margin-top: 10px; 
-	font-family: 'Alegreya', serif;
+	font-family: 'Quattrocento Sans', 'cwTeXFangSong', sans-serif;
 	font-weight: 400;
-	font-size: 16px; 
+	font-size: 18px; 
 	line-height: 24px;
 	color: black; 
 }
@@ -105,12 +105,9 @@ a:focus {
 }
 
 .navbar-brand {
-	font-family: 'IM Fell English SC', serif;
-	font-weight: 700;
+	font-family: 'Quattrocento', 'cwTeXFangSong', serif;
+	font-weight: 400;
 	font-size: 28px;
-}
-:lang(zh-Hant) {
-  font-family: 'cwTeXMing', serif;
 }
 
 .navbar-header .navbar-brand {
@@ -118,6 +115,7 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a {
+	font-family: 'Quattrocento', serif;
 	color: black;
 	font-weight: 700;
 	font-size: 18px;
@@ -298,8 +296,8 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:#52a53d;
-	background-color:rgba(82,165,61,.9);
+	background-color:#000000;
+	background-color:rgba(0,0,0,.3);
 	text-align:center;
 }
 
@@ -534,7 +532,8 @@ a.anchor{
   clear: both;
 }
 td {
-  font-family: 'Alegreya', serif;
+  padding: 5px;
+  font-family: 'Quattrocento Sans', sans-serif;
   font-size: 16px;
   min-width: 16px;
 }
