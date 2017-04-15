@@ -81,6 +81,7 @@
 	-ms-animation-duration: .6s;
 	-o-animation-duration: .6s;
 	animation-duration: .6s;
+  display: table;
 }
 .a1
 {
@@ -88,6 +89,8 @@
 	-moz-animation-delay: .2s;
 	-o-animation-delay: .2s;
 	animation-delay: .2s;
+  display: table-cell; 
+  vertical-align: middle;
 }
 .a2
 {
