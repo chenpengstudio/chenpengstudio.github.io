@@ -1,0 +1,221 @@
+:root {
+  --background-color: rgb(255,255,255);
+  --text-color: #000000;
+  --lightbox: rgb(255, 255, 255);
+  --carousel-text: #000000;
+}
+
+body {
+  background-color: var(--background-color); 
+  color: var(--text-color);
+  font-family: "Nunito", serif;
+  
+}
+
+.gallery-item {
+  display: block;
+  margin: 1rem;
+}
+
+.container {
+  width: 100%; /* Set the desired width as a percentage */
+  max-width: 100%; /* Set a maximum width */
+  height: auto; /* Set the desired height */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 5%; /* Add some padding */
+  background-color: rgb(255, 255, 255);
+}
+
+.container-title{
+
+  width: 100%; /* Set the desired width as a percentage */
+  max-width: 100%; /* Set a maximum width */
+  height: auto; /* Set the desired height */
+  margin: 0 auto; /* Center the container horizontally */
+  padding-left: 5%; /* Add some padding */
+  padding-top: 5%; /* Add some padding */
+  background-color: rgb(255, 255, 255);
+  background: transparent;
+  color: #000000;
+  font-family: "Nunito", serif;
+  font-weight: 500;
+}
+
+
+.lightbox-modal .modal-content {
+  background-color: white;
+}
+
+
+
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: white;
+}
+
+.lightbox-modal .lightbox-content {
+  width: 100%;
+}
+
+.lightbox-modal .carousel-indicators {
+  margin-bottom: 0;
+}
+
+.lightbox-modal .carousel-indicators [data-bs-target] {
+  background-color: var(--carousel-text) !important;
+}
+
+.lightbox-modal .carousel-inner {
+  width: 75%;
+}
+
+
+.lightbox-modal .carousel-item .carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 0rem;
+  background-color: rgb(255, 255, 255);
+  color: var(--carousel-text) !important;
+}
+
+.carousel-caption {
+  position: static;
+  /* padding-top: 1rem; Add some space between the image and the caption */
+  text-align: center; /* Center align the caption */
+  color: var(--carousel-text); /* Use the carousel text color variable */
+}
+
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+  width: auto;
+}
+
+.lightbox-modal .carousel-control-prev {
+  left: 1.25rem;
+}
+
+.lightbox-modal .carousel-control-next {
+  right: 1.25rem;
+}
+
+@media (min-width: 1400px) {
+  .lightbox-modal .carousel-inner {
+    max-width:40%;
+  }
+}
+
+[data-bs-theme = "light"] .lightbox-modal .carousel-control-next-icon,
+[data-bs-theme = "light"] .lightbox-modal .carousel-control-prev-icon {
+    filter: none;
+}
+
+.btn-fullscreen-enlarge,
+.btn-fullscreen-exit{
+  position: absolute;
+ color: #000000;
+  top: 1.25rem;
+  right: 3.5rem;
+  z-index: 10;
+  border: 0;
+  background: transparent;
+  font-size: 1.25rem;
+
+}
+
+
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 1.05rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  z-index: 10;
+  filter: none;
+  color:#000000
+}
+
+.bi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.035em;
+  fill: currentcolor;
+}
+
+
+a:link,a:visited,a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: rgb(66, 155, 223);
+  background-color: transparent;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>🐶</text></svg>")
+  16 16, auto;
+}
+
+/* navigation bar */
+
+.gfg {
+  height: 50px;
+  width: 50px;
+}
+
+.mynav {
+  color: #000000;
+}
+
+.mynav li a {
+  color: #000000;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+
+.mynav li a.active {
+  background: rgb(0, 0, 0);
+}
+
+.mynav li a:hover {
+  background: transparent;
+  color: rgb(66, 155, 223);
+  
+
+}
+
+.mynav li a i {
+  width: 25px;
+  text-align: center;
+}
+
+.notification-badge {
+  background-color: rgba(5, 5, 5, 0.7);
+  float: right;
+  color: #222;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 2px;
+}
+
+.vspace {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.font-color-grey {
+  color: rgb(178, 178, 178);
+}
+
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+}
+
