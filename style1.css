@@ -15,7 +15,25 @@ body {
 .gallery-item {
   display: block;
   margin: 1rem;
+ 
 }
+
+figure{
+  padding-bottom: 2rem;
+}
+
+figcaption{
+margin-top: 1rem;
+}
+
+.col{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+  
 
 .container {
   width: 100%; /* Set the desired width as a percentage */
@@ -24,6 +42,8 @@ body {
   margin: 0 auto; /* Center the container horizontally */
   padding: 5%; /* Add some padding */
   background-color: rgb(255, 255, 255);
+  
+ 
 }
 
 .container-title{
