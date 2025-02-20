@@ -30,10 +30,13 @@ margin-top: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: left;
+  text-align: center;
 }
 
-  
+.text-col {
+  display: block;
+  text-align: left; /* Align text to the left */
+}
 
 .container {
   width: 100%; /* Set the desired width as a percentage */
@@ -42,7 +45,6 @@ margin-top: 1rem;
   margin: 0 auto; /* Center the container horizontally */
   padding: 5%; /* Add some padding */
   background-color: rgb(255, 255, 255);
-  
  
 }
 
@@ -171,6 +173,9 @@ a:link,a:visited,a:active {
   text-decoration: none;
 }
 
+a.active {
+  font-weight: bold;
+}
 
 a:hover {
   color: rgb(66, 155, 223);
@@ -200,7 +205,7 @@ a:hover {
 }
 
 .mynav li a.active {
-  background: rgb(0, 0, 0);
+font-weight: bold;
 }
 
 .mynav li a:hover {
