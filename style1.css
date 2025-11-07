@@ -8,9 +8,18 @@
 body {
   background-color: var(--background-color); 
   color: var(--text-color);
-  font-family: "Nunito", serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /* letter-spacing: 0.01em; */
+
+  }
   
-}
+  h1, h2, h3, .nav-item a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /* letter-spacing: 0.02em; */
+  }
+
 /* 
 .gallery-item {
   display: block;
@@ -28,6 +37,7 @@ body {
   aspect-ratio: 1/ 1;      /* control the shape (4:3 or 1:1 for square) */
   /* border-radius: 6px;       optional, soft edges */
   padding: 1rem;
+  margin-top: 0;
 }
 
 /* Make the image scale nicely inside that frame */
@@ -63,8 +73,10 @@ margin-top: 1rem;
   max-width: 100%; /* Set a maximum width */
   height: auto; /* Set the desired height */
   margin: 0 auto; /* Center the container horizontally */
-  padding: 4%; /* Add some padding */
   background-color: rgb(255, 255, 255);
+  padding-top: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
  
 }
 
@@ -74,13 +86,14 @@ margin-top: 1rem;
   max-width: 100%; /* Set a maximum width */
   height: auto; /* Set the desired height */
   margin: 0 auto; /* Center the container horizontally */
+  padding-top: 2%;
   padding-left: 5%; /* Add some padding */
-  padding-top: 5%; /* Add some padding */
   background-color: rgb(255, 255, 255);
   background: transparent;
   color: #000000;
-  font-family: "Nunito", serif;
-  font-weight: 500;
+  font-family:     font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  
 }
 
 
@@ -193,7 +206,7 @@ a:link,a:visited,a:active {
   text-decoration: none;
 }
 
-a.active {
+/* a.active {
   font-weight: bold;
 }
 
@@ -202,7 +215,7 @@ a:hover {
   background-color: transparent;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>🐶</text></svg>")
   16 16, auto;
-}
+} */
 
 /* navigation bar */
 
@@ -213,6 +226,9 @@ a:hover {
 
 .mynav {
   color: #000000;
+padding-top: 0;
+margin-top: 0;
+
 }
 
 .mynav li a {
@@ -220,18 +236,35 @@ a:hover {
   text-decoration: none;
   width: 100%;
   display: block;
-  border-radius: 5px;
-  padding: 8px 5px;
+  /* border-radius: 5px; */
+  /* padding: 8px 5px; */
 }
 
+/* Reduce spacing between nav links */
+.mynav li {
+  margin-bottom: 0;           /* remove Bootstrap gap */
+}
+
+.mynav li a {
+  
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1.15rem;
+  line-height: 1.1;           /* tighten line height */
+
+}
+
+
+
+
 .mynav li a.active {
-font-weight: bold;
+  text-decoration: underline;
 }
 
 .mynav li a:hover {
   background: transparent;
-font-weight: bold;  
-
+text-decoration-line: underline;
+ 
 }
 
 .mynav li a i {
@@ -249,8 +282,7 @@ font-weight: bold;
 }
 
 .vspace {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .font-color-grey {
@@ -272,3 +304,52 @@ font-weight: bold;
   object-fit: contain;
 }
 
+
+#bdSidebar {
+  padding-top: 0 !important;    /* overrides Bootstrap's p-4 */
+  margin-top: 0 !important;
+}
+
+#bdSidebar .mynav {
+  margin-top: 0 !important;     /* remove default list margin */
+  padding-top: 0 !important;
+}
+
+#bdSidebar .vspace {
+  padding-top: 0 !important;    /* disable custom vspace block */
+  margin-top: 0 !important;
+}
+
+/* --------------------------------------------
+   PAGE TOP SPACING CONSISTENCY
+   -------------------------------------------- */
+
+/* === Align main content top with sidebar top === */
+
+/* 1) Sidebar is already flush; make main content flush too */
+#bdSidebar + .bg-white.flex-fill {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* 2) Kill any first-child top margin in the main area */
+#bdSidebar + .bg-white.flex-fill > *:first-child {
+  margin-top: 0 !important;
+}
+
+/* 3) Specifically zero the gallery section + its container */
+.photo-gallery {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.photo-gallery .container {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* 4) Headings at the very top shouldn’t add space */
+.photo-gallery h1:first-child,
+.photo-gallery h2:first-child,
+.photo-gallery h3:first-child {
+  margin-top: 0 !important;
+}
