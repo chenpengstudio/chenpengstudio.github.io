@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       markup += `
         <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
-          <img class="d-block img-fluid w-100" src=${imgSrc} alt="${imgAlt}">
+ <img class="d-block img-fluid mx-auto lightbox-img" src="${imgSrc}" alt="${imgAlt}">
           ${imgAlt ? createCaption(imgAlt) : ""}
         </div>`;
     }

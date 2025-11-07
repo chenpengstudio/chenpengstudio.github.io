@@ -11,11 +11,31 @@ body {
   font-family: "Nunito", serif;
   
 }
-
+/* 
 .gallery-item {
   display: block;
   margin: 1rem;
+  
  
+} */
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; 
+  overflow: hidden;
+  aspect-ratio: 1/ 1;      /* control the shape (4:3 or 1:1 for square) */
+  /* border-radius: 6px;       optional, soft edges */
+  padding: 1rem;
+}
+
+/* Make the image scale nicely inside that frame */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* keeps full image visible */
+  object-position: center;
 }
 
 figure{
@@ -43,7 +63,7 @@ margin-top: 1rem;
   max-width: 100%; /* Set a maximum width */
   height: auto; /* Set the desired height */
   margin: 0 auto; /* Center the container horizontally */
-  padding: 5%; /* Add some padding */
+  padding: 4%; /* Add some padding */
   background-color: rgb(255, 255, 255);
  
 }
@@ -241,5 +261,14 @@ font-weight: bold;
 .offcanvas-body {
   display: flex;
   flex-direction: column;
+}
+
+/* Constrain the image so the caption always fits on screen */
+.lightbox-modal .lightbox-img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 78vh;        /* leave room for caption + controls */
+  object-fit: contain;
 }
 
