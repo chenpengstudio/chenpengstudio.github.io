@@ -355,3 +355,7 @@ text-decoration-line: underline;
 .photo-gallery h3:first-child {
   margin-top: 0 !important;
 }
+
+a:hover {
+  text-decoration: underline;
+}
