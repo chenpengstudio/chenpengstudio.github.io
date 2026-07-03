@@ -359,3 +359,7 @@ text-decoration-line: underline;
 a:hover {
   text-decoration: underline;
 }
+footer#copyright {
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
